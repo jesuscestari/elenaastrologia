@@ -4,12 +4,11 @@ import { LazyMotion, domMax, m } from 'framer-motion'
 import { fadeInUp, staggerContainer, fadeIn, cardItem, slideInLeft, slideInRight, zoomSubtle } from './animations'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
-import { FaWhatsapp, FaInstagram } from 'react-icons/fa'
+import { FaWhatsapp } from 'react-icons/fa'
 import { FiChevronLeft, FiChevronRight, FiPlus, FiMinus, FiPhone } from 'react-icons/fi'
 import { GiCrystalBall, GiPalm, GiSpiralShell, GiPathDistance, GiHearts, GiCandles } from 'react-icons/gi'
 
 const WHATSAPP_LINK = 'https://wa.me/5491125376233?text=Hola%2C%20vengo%20desde%20la%20p%C3%A1gina%20web%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20las%20sesiones'
-const INSTAGRAM_LINK = 'https://www.instagram.com/'
 
 // Assets
 import image2 from './assets/2.webp'
@@ -390,15 +389,6 @@ function Contacto() {
           >
             <FaWhatsapp className="h-4 w-4" />
             WhatsApp
-          </a>
-          <a
-            href={INSTAGRAM_LINK}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-ghost inline-flex items-center gap-2"
-          >
-            <FaInstagram className="h-4 w-4" />
-            Instagram
           </a>
           <a
             href="tel:+5491125376233"
