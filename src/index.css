@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/* Tema base: claro elegante */
+html, body, #root { height: 100%; }
+body { @apply bg-white text-zinc-900 antialiased selection:bg-rose-200; }
+html { scroll-behavior: smooth; }
+
+/* Tipografías */
+:root { --font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji';
+        --font-display: 'DM Serif Display', ui-serif, Georgia, Cambria, "Times New Roman", Times, serif; }
+
+.font-display { font-family: var(--font-display); }
+.font-sans { font-family: var(--font-sans); }
+
+/* Utilidades personalizadas */
+.container-px { @apply px-4 sm:px-6 lg:px-8; }
+.card { @apply rounded-2xl border border-zinc-200 bg-white shadow-lg shadow-black/5; }
+.btn-primary { @apply inline-flex items-center justify-center rounded-full bg-rose-600 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-rose-600/30 hover:bg-rose-500 transition; }
+.btn-ghost { @apply inline-flex items-center justify-center rounded-full border border-zinc-300 px-6 py-3 text-sm font-semibold text-zinc-700 hover:bg-zinc-50 transition; }
+
+/* Gradientes y ornamentos */
+.aurora {
+  background: radial-gradient(1200px 600px at 20% -20%, rgba(168,85,247,0.15), transparent 60%),
+              radial-gradient(900px 500px at 80% 0%, rgba(59,130,246,0.12), transparent 60%),
+              radial-gradient(800px 500px at 50% 100%, rgba(236,72,153,0.10), transparent 60%);
+  animation: auroraFloat 18s ease-in-out infinite alternate;
+}
+
+@keyframes auroraFloat {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+    filter: blur(0px);
+  }
+  100% {
+    transform: translate3d(0, -10px, 0) scale(1.02);
+    filter: blur(1px);
+  }
+}
+
+
+
+/* Efecto parallax para CTA final */
+.parallax-bg {
+  transform: translateZ(0);
+  will-change: transform;
+  animation: parallaxFloat 15s ease-in-out infinite alternate;
+}
+
+@keyframes parallaxFloat {
+  0% {
+    transform: scale(1) translateY(0);
+  }
+  100% {
+    transform: scale(1.05) translateY(-10px);
+  }
+}
+
+/* Reservado: estilos alternativos eliminados */
