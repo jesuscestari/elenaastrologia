@@ -8,7 +8,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 import { FiChevronLeft, FiChevronRight, FiPlus, FiMinus, FiPhone } from 'react-icons/fi'
 import { GiCrystalBall, GiPalm, GiSpiralShell, GiPathDistance, GiHearts, GiCandles } from 'react-icons/gi'
 
-const WHATSAPP_LINK = 'https://wa.me/5491125376233?text=Hola%2C%20vengo%20desde%20la%20p%C3%A1gina%20web%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20las%20sesiones'
+const WHATSAPP_LINK = 'https://wa.me/5491122966823?text=Hola%2C%20vengo%20desde%20la%20p%C3%A1gina%20web%20y%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20las%20sesiones'
 
 // Assets
 import image2 from './assets/2.webp'
@@ -391,7 +391,7 @@ function Contacto() {
             WhatsApp
           </a>
           <a
-            href="tel:+5491125376233"
+            href="tel:+5491122966823"
             className="btn-ghost inline-flex items-center gap-2"
           >
             <FiPhone className="h-4 w-4" />
