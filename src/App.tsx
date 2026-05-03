@@ -391,7 +391,7 @@ function Contacto() {
             WhatsApp
           </a>
           <a
-            href="tel:+5491122966823"
+            href="tel:+5491125376233"
             className="btn-ghost inline-flex items-center gap-2"
           >
             <FiPhone className="h-4 w-4" />
